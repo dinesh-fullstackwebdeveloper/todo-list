@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    user-select: none;
+}
+#container{
+    width: 40%;
+    min-height: 20%;
+    background-color:teal;
+    text-align: center;
+    display: flex;
+    flex-wrap: ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    row-gap: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+input[type="text"]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:cadetblue;
+    color: white;
+    padding-left: 15px;
+    width: 70%;
+    font-size: 18px;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+h1{
+    color:white;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: teal;
+    background-color:white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.2s linear;
+}
+#sub:hover,#del:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 10px;
+}
+#del{
+    background-color:maroon;
+    color: white;
+    margin-left: 200px;
+    margin-right: -50px;
+}
+li{
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -50px;
+    font-size: 23px;
+}
+li::before{
+    content: ' 📌 ';
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
